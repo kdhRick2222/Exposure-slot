@@ -129,7 +129,7 @@ We provide *2-level* and *3-level* slot-in-slot model for each dataset (SICE, MS
 If you find our work useful in your research, please cite:
 
 ```
-@inproceedings{Dae2023sanflow,
+@inproceedings{Dong2025Exposureslot,
   title={Exposure-slot: Exposure-centric representations learning with Slot-in-Slot Attention for Region-aware Exposure Correction},
   author={Donggoo Jung, Daehyun Kim, Guanghui Wang, Tae Hyun Kim},
   booktitle={Computer Vision and Pattern Recognition (CVPR)},
