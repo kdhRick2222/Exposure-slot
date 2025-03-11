@@ -36,7 +36,7 @@ cd Exposure-slot
 
 ### 2. Download Pre-trained models and Official Checkpoints
 
-We utilize pre-trained models from [Exposure-slot_ckpt.zip)](https://1drv.ms/u/c/1acaeb9b8ad3b4e8/ESoJibo6AeBNpjmZjVYWBqcB7Chlw8_Wdtw0bmz9jkZxsg?e=GTbKrU).
+We utilize pre-trained models from [Exposure-slot_ckpt.zip](https://1drv.ms/u/c/1acaeb9b8ad3b4e8/ESoJibo6AeBNpjmZjVYWBqcB7Chlw8_Wdtw0bmz9jkZxsg?e=GTbKrU).
 
 - Place the pre-trained models into the `ckpt/` directory.
 
@@ -46,10 +46,11 @@ For training and validating our model, we used SICE, MSEC, and LCDP dataset
 
 - ### SICE dataset
 
-  We downloaded the SICE dataset from [here](https://github.com/csjcai/SICE).
+  We downloaded the SICE dataset from [here](https://github.com/csjcai/SICE). 
   ```
   python prepare_SICE.py
   ```
+  Make .Dataset_txt/SICE_Train.txt and .Dataset_txt/SICE_Test.txt for validation and training.
 
 - ### MSEC dataset
 
@@ -57,6 +58,7 @@ For training and validating our model, we used SICE, MSEC, and LCDP dataset
   ```
   python prepare_MSEC.py
   ```
+  Make .Dataset_txt/MSEC_Train.txt and .Dataset_txt/MSEC_Test.txt for validation and training.
   
 - ### LCDP dataset
 
@@ -64,6 +66,8 @@ For training and validating our model, we used SICE, MSEC, and LCDP dataset
   ```
   python prepare_LCDP.py
   ```
+  Make .Dataset_txt/LCDP_Train.txt and .Dataset_txt/LCDP_Test.txt for validation and training.
+
 
 ## Inference and Evaluation
 
@@ -71,44 +75,47 @@ For training and validating our model, we used SICE, MSEC, and LCDP dataset
 
 python test.py --level=2 --dataset="MSEC"
 
+
 ## Training
 
 python train.py --gpu_num=0 --level=2 --dataset="MSEC"
 
+
 ## Overall directory
 
 ```
-├── results
+├── ckpts
+│ ├── LCDP_level2.pth
+│ ├── LCDP_level3.pth
+│ ├── MSEC_level2.pth
+│ ├── MSEC_level3.pth
+│ ├── SICE_level2.pth
+│ └── SICE_level3.pth
 │
-├── models
-│ ├── ffhq_10m.pt # FFHQ for training
-│ ├── 256x256_diffusion_uncond.pt # ImageNet for training
-│ └── official_ckpt # For Evaluation
-│     ├── ffhq
-│     │   ├── gaussian_ema.pt
-│     │   ├── sr_averagepooling_ema.pt
-│     │   ├── ...
-│     │   ├── ...
-│     ├── imagenet
-│     │   ├── gaussian_ema.pt
-│     │   ├── sr_averagepooling_ema.pt
-│     │   ├── ...
-│     └── └── ...
+├── config
+│ ├── basic.py
 │
-├── data # including training set and evaluation set
-│ ├── ffhq_1K # FFHQ evluation
-│ ├── imagenet_val_1K # ImageNet evluation
-│ ├── ffhq_49K # FFHQ training
-│ ├── imagenet_130K # ImageNet training
-│ └── y_npy
-│         ├── ffhq_1k_npy
-│         │   ├── gaussian
-│         │   ├── sr_averagepooling
-│         │   ├── ...
-│         │   └── ...
-│         ├── imagenet_val_1k_npy
-│         │   ├── gaussian
-│         │   ├── sr_averagepooling
-│         │   ├── ...
-└─────────└── └── ...
+├── data
+│ ├── dataloaders.py
+│ └── datasets.py
+|
+├── Dataset_txt
+│ ├── LCDP_Train.txt
+│ ├── LCDP_Test.txt
+│ ├── MSEC_Train.txt
+│ ├── MSEC_Test.txt
+│ ├── SICE_Train.txt
+│ └── SICE_Test.txt
+|
+├── utils
+│ ├── scheduler_util.py
+│ └── util.py
+|
+├── network_level2.py
+├── network_level3.py
+├── prepare_LCDP.py
+├── prepare_MSEC.py
+├── prepare_SICE.py
+├── test.py
+└── train.py
 ```
