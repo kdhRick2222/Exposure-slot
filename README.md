@@ -1,7 +1,11 @@
 <p align="center">
   <h1 align="center">Exposure-slot: Exposure-centric representations learning with Slot-in-Slot Attention for Region-aware Exposure Correction</h1>
   
-  <p align="center">[Donggoo Jung](https://github.com/dgjung0220)*, Daehyun Kim*, Guanghui Wang, [Tae Hyun Kim](https://sites.google.com/view/lliger9/)†.
+  <p align="center">
+    <a href="https://github.com/dgjung0220">Donggoo Jung</a>*, 
+    Daehyun Kim*, 
+    Guanghui Wang, 
+    <a href="https://sites.google.com/view/lliger9/">Tae Hyun Kim</a>†.
   </p>
   <h2 align="center">CVPR 2025</h2>
 
