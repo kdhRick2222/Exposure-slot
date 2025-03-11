@@ -6,6 +6,7 @@
     <a href="https://github.com/kdhRick2222">Daehyun Kim</a>*, 
     <a href="https://scholar.google.com/citations?hl=ko&user=I_5aoAwAAAAJ">Guanghui Wang</a>,
     <a href="https://sites.google.com/view/lliger9/">Tae Hyun Kim</a>†.
+     (*Equal Contribution, †Corresponding author)
   </p>
   <h2 align="center">CVPR 2025</h2>
 
