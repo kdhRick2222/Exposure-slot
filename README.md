@@ -16,7 +16,7 @@
 
 </p>
 
-This repository contains the official PyTorch implementation of "**_Exposure-slot_**: Exposure-centric representations learning with Slot-in-Slot Attention for Region-aware Exposure Correction" accepted at **CVPR 2025.**
+This repository contains the official PyTorch implementation of "**_Exposure-slot_**: *Exposure-centric representations learning with Slot-in-Slot Attention for Region-aware Exposure Correction*" accepted at **CVPR 2025.**
 
 
 <div align="center">
