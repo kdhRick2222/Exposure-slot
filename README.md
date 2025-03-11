@@ -3,8 +3,8 @@
   
   <p align="center">
     <a href="https://github.com/dgjung0220">Donggoo Jung</a>*, 
-    Daehyun Kim*, 
-    Guanghui Wang, 
+    <a href="https://github.com/kdhRick2222">Daehyun Kim</a>*, 
+    <a href="https://scholar.google.com/citations?hl=ko&user=I_5aoAwAAAAJ">Guanghui Wang, 
     <a href="https://sites.google.com/view/lliger9/">Tae Hyun Kim</a>†.
   </p>
   <h2 align="center">CVPR 2025</h2>
@@ -18,14 +18,14 @@
 
 This repository contains the official PyTorch implementation of **_Exposure-slot_**: **Exposure**-centric representations learning with **Slot-in-Slot Attention** for Region-aware Exposure Correction accepted at **CVPR 2025.**
 
+<div align="center">
+  <img src="images/concept_figure.png" width="700px" />
+</div>
+
 Exposure-slot is the first approach to leverage Slot Attention mechanism for optimized exposure-specific feature partitioning. 111
 • We introduce the slot-in-slot attention that enables sophisticated feature partitioning and learning and exposure-aware prompts that enhance the exposure-centric characteristics of each image feature. 
 
 Our proposing method is **the first approach to leverage Slot Attention mechanism** for optimized exposure-specific feature partitioning. We introduce the **slot-in-slot attention** that enables sophisticated feature partitioning and learning and exposure-aware prompts that enhance the exposure-centric characteristics of each image feature. We provide validation code, training code, and pre-trained weights on three benchmark datasets (**MSEC, SICE, LCDP**).
-
-<div align="center">
-  <img src="images/concept_figure.png" width="700px" />
-</div>
 
 ## Setting
 
