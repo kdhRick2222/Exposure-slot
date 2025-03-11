@@ -125,7 +125,7 @@ We provide *2-level* and *3-level* slot-in-slot model for each dataset (SICE, MS
 └── train.py
 ```
 
-### Citation
+## Citation
 If you find our work useful in your research, please cite:
 
 ```
