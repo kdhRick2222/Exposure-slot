@@ -1,4 +1,3 @@
-# Exposure-slot
 <p align="center">
   <h1 align="center">Exposure-slot: Exposure-centric representations learning with Slot-in-Slot Attention for Region-aware Exposure Correction</h1>
   
@@ -37,46 +36,33 @@ cd Exposure-slot
 
 ### 2. Download Pre-trained models and Official Checkpoints
 
-We utilize pre-trained models from [FFHQ (ffhq_10m.pt)](https://drive.google.com/drive/folders/1jElnRoFv7b31fG0v6pTSQkelbSX3xGZh).
+We utilize pre-trained models from [Exposure-slot_ckpt.zip)](https://1drv.ms/u/c/1acaeb9b8ad3b4e8/ESoJibo6AeBNpjmZjVYWBqcB7Chlw8_Wdtw0bmz9jkZxsg?e=GTbKrU).
 
-- Download the checkpoints for FFHQ and ImageNet from this [Google Drive Link](https://drive.google.com/drive/folders/1h8vKYwTYSshljBuW9NdBRJQSp_HBPZdA).
 - Place the pre-trained models into the `ckpt/` directory.
 
 ### 3. Prepare Data
 
-For amortized optimization, we use the FFHQ 49K dataset and the ImageNet 130K dataset, which are subsets of the training datasets used for the pre-trained models. These subsets are distinct from the validation datasets (ffhq_1K and imagenet_val_1K) used for evaluation.
+For training and validating our model, we used SICE, MSEC, and LCDP dataset
 
-- ### FFHQ 256x256
+- ### SICE dataset
 
-  - `data/ffhq_1K` and `data/ffhq_49K`.
-
-  We downloaded the FFHQ dataset and resized it to 256x256, following the instructions on the [ffhq-dataset
-  public site](https://github.com/NVlabs/ffhq-dataset).
-
-  We use 00000-00999 as the validation set (1K) and 01000-49999 (49K) as the training set.
-
-- ### ImageNet 256x256
-
-  - `data/imagenet_val_1K` and `data/imagenet_130K`.
-
-  We downloaded the [ImageNet 100 dataset](https://www.kaggle.com/datasets/ambityga/imagenet100) and use its training set.
-
-- ### Measurements as numpy format
-
-  - `data/y_npy`
-
-  During amortized training, we load a subset of the training set to monitor the convergence of the training process.
-
-  You can specify degradation types using the `--deg` option.
-
-  - Gaussian Deblur `gaussian`
-  - 4x Super-resolution `sr_averagepooling`
-  - Box inpainting `inpainting`
-  - Denoising `deno`
-  - Colorization `colorization`
-
+  We downloaded the SICE dataset from [here](https://github.com/csjcai/SICE).
   ```
-  python utils/get_measurements.py --deg gaussian --data_dir data/ffhq_49K
+  python prepare_SICE.py
+  ```
+
+- ### MSEC dataset
+
+  We downloaded the MSEC dataset from [here](https://github.com/mahmoudnafifi/Exposure_Correction).
+  ```
+  python prepare_MSEC.py
+  ```
+  
+- ### LCDP dataset
+
+  We downloaded the LCDP dataset from [here](https://github.com/onpix/LCDPNet).
+  ```
+  python prepare_LCDP.py
   ```
 
 ## Overall directory
