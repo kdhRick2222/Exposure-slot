@@ -48,7 +48,7 @@ We utilize pre-trained models from [Exposure-slot_ckpt.zip](https://1drv.ms/u/c/
 
 ### 3. Prepare Data
 
-For training and validating our model, we used SICE, MSEC, and LCDP dataset
+For training and validating our model, we used SICE, MSEC, and LCDP dataset.
 
 - ### SICE dataset
 
@@ -78,14 +78,14 @@ For training and validating our model, we used SICE, MSEC, and LCDP dataset
 ## Inference and Evaluation
 
 - We provide *2-level* and *3-level* slot-in-slot model for each dataset (SICE, MSEC, LCDP).
-
-python test.py --level=2 --dataset="MSEC"
-
+  ```
+  python test.py --level=2 --dataset="MSEC"
+  ```
 
 ## Training
-
-python train.py --gpu_num=0 --level=2 --dataset="MSEC"
-
+  ```
+  python train.py --gpu_num=0 --level=2 --dataset="MSEC"
+  ```
 
 ## Overall directory
 
