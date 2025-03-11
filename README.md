@@ -19,7 +19,7 @@
 This repository contains the official PyTorch implementation of **_Exposure-slot_**: **Exposure**-centric representations learning with **Slot-in-Slot Attention** for Region-aware Exposure Correction accepted at **CVPR 2025.**
 
 <div align="center">
-  <img src="images/concept_figure.png" width="700px" />
+  <img src="images/concept_figure.png" width="500px" />
 </div>
 
 Exposure-slot is the first approach to leverage Slot Attention mechanism for optimized exposure-specific feature partitioning. 111
