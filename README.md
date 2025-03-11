@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">Exposure-slot: Exposure-centric representations learning with Slot-in-Slot Attention for Region-aware Exposure Correction</h1>
   
-  <p align="center">[Donggoo Jung*](https://github.com/dgjung0220), Daehyun Kim*, Guanghui Wang, [Tae Hyun Kim†](https://sites.google.com/view/lliger9/).
+  <p align="center">[Donggoo Jung](https://github.com/dgjung0220)*, Daehyun Kim*, Guanghui Wang, [Tae Hyun Kim](https://sites.google.com/view/lliger9/)†.
   </p>
   <h2 align="center">CVPR 2025</h2>
 
@@ -20,7 +20,7 @@ Exposure-slot is the first approach to leverage Slot Attention mechanism for opt
 Our proposing method is **the first approach to leverage Slot Attention mechanism** for optimized exposure-specific feature partitioning. We introduce the **slot-in-slot attention** that enables sophisticated feature partitioning and learning and exposure-aware prompts that enhance the exposure-centric characteristics of each image feature. We provide validation code, training code, and pre-trained weights on three benchmark datasets (**MSEC, SICE, LCDP**).
 
 <div align="center">
-  <img src="asset/main.png" width="700px" />
+  <img src="images/concept_figure.png" width="700px" />
 </div>
 
 ## Setting
