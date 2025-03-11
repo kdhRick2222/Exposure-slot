@@ -65,6 +65,16 @@ For training and validating our model, we used SICE, MSEC, and LCDP dataset
   python prepare_LCDP.py
   ```
 
+## Inference and Evaluation
+
+- We provide *2-level* and *3-level* slot-in-slot model for each dataset (SICE, MSEC, LCDP).
+
+python test.py --level=2 --dataset="MSEC"
+
+## Training
+
+python train.py --gpu_num=0 --level=2 --dataset="MSEC"
+
 ## Overall directory
 
 ```
@@ -101,33 +111,4 @@ For training and validating our model, we used SICE, MSEC, and LCDP dataset
 │         │   ├── sr_averagepooling
 │         │   ├── ...
 └─────────└── └── ...
-```
-
-## Evaluation
-
-### 1. Restore degraded images
-
-- You can specify the directory of measurements with `--y_dir data/y_npy`
-
-```
-accelerate launch --num_processes=1 eval.py --eval_dir data/ffhq_1K --deg gaussian --perturb_h 0.1 --ckpt model/official_ckpt/ffhq/gaussian_ema.pt
-```
-
-### 2. Evaluate PSNR,LPIPS and FID
-
-- PSNR and LPIPS
-  ```
-  python utils/eval_psnr_lpips.py
-  ```
-- FID: [pytorch-fid](https://github.com/mseitzer/pytorch-fid)
-  ```
-  python -m pytorch_fid source_dir recon_dir
-  ```
-
-## Train with MultiGPU
-
-- To check training logs, use the `--use_wandb` flag.
-
-```
-accelerate launch --multi_gpu --num_processes=4 train.py --data_dir data/ffhq_49K/ --model_path model/ffhq_10m.pt --deg gaussian --t_ikl 400 --weight_con 0.5 --reg_coeff 0.25 --perturb_h 0.1
 ```
