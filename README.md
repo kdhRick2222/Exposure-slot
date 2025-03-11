@@ -30,7 +30,7 @@ Please follow these steps to set up the repository.
 ### 1. Clone the Repository
 
 ```
-git clone https://github.com/mlvlab/Exposure-slot.git
+git clone https://github.com/kdhRick2222/Exposure-slot.git
 cd Exposure-slot
 ```
 
