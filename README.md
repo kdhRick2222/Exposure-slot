@@ -77,7 +77,7 @@ For training and validating our model, we used SICE, MSEC, and LCDP dataset.
 
 
 ## Inference and Evaluation
-We provide *2-level* and *3-level* slot-in-slot model for each dataset (SICE, MSEC, LCDP).
+We provide *2-level* and *3-level* Exposure-slot model for each dataset (SICE, MSEC, LCDP).
   ```
   python test.py --level=2 --dataset="MSEC"
   ```
