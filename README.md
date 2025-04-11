@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">Exposure-slot: Exposure-centric representations learning with Slot-in-Slot Attention for Region-aware Exposure Correction</h1>
+  <h1 align="center">Exposure-slot: Exposure-centric representations learning with Slot-in-Slot Attention for Region-aware Exposure Correction (Official)</h1>
   
   <p align="center">
     <a href="https://github.com/dgjung0220">Donggoo Jung</a>*, 
