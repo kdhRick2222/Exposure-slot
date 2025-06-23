@@ -13,7 +13,9 @@
   <h3 align="center">
     <a href="https://github.com/kdhRick2222/Exposure-slot/" target='_blank'><img src="https://img.shields.io/badge/🐳-Project%20Page-blue"></a>
     <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Jung_Exposure-slot_Exposure-centric_Representations_Learning_with_Slot-in-Slot_Attention_for_Region-aware_Exposure_CVPR_2025_paper.pdf" target='_blank'><img src="https://img.shields.io/badge/arXiv-2407.16125-b31b1b.svg"></a>
-    [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/exposure-slot-exposure-centric/image-enhancement-on-exposure-errors)](https://paperswithcode.com/sota/image-enhancement-on-exposure-errors?p=exposure-slot-exposure-centric)
+    <a href="https://paperswithcode.com/sota/image-enhancement-on-exposure-errors?p=exposure-slot-exposure-centric" target="_blank">
+  <img src="https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/exposure-slot-exposure-centric/image-enhancement-on-exposure-errors">
+</a>
   </h3>
 
 </p>
