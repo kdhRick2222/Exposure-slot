@@ -46,7 +46,7 @@ cd Exposure-slot
 
 ### 2. Download Pre-trained models and Official Checkpoints
 
-We utilize pre-trained models from [Exposure-slot_ckpt.zip](https://1drv.ms/u/c/1acaeb9b8ad3b4e8/ESoJibo6AeBNpjmZjVYWBqcB7Chlw8_Wdtw0bmz9jkZxsg?e=GTbKrU).
+We utilize pre-trained models from [Exposure-slot_ckpt.zip]([https://1drv.ms/u/c/1acaeb9b8ad3b4e8/ESoJibo6AeBNpjmZjVYWBqcB7Chlw8_Wdtw0bmz9jkZxsg?e=GTbKrU](https://1drv.ms/u/c/1acaeb9b8ad3b4e8/EbXfGpLIf4lPsbk7RKVW12IBP1HOFVIw4GWRS_HYq3Y1Uw?e=shUYqR).
 
 - Place the pre-trained models into the `ckpt/` directory.
 
