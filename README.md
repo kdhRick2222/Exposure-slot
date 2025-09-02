@@ -11,8 +11,6 @@
   <h2 align="center">CVPR 2025</h2>
 
   <h3 align="center">
-    <a href="https://github.com/kdhRick2222/Exposure-slot/" target='_blank'><img src="https://img.shields.io/badge/🐳-Project%20Page-blue"></a>
-    <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Jung_Exposure-slot_Exposure-centric_Representations_Learning_with_Slot-in-Slot_Attention_for_Region-aware_Exposure_CVPR_2025_paper.pdf" target='_blank'><img src="https://img.shields.io/badge/🐳-Paper%20Page-blue"></a>
     <!-- GitHub Project -->
     <a href="https://github.com/kdhRick2222/Exposure-slot" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white"></a>
     <!-- CVPR Paper -->
