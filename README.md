@@ -13,6 +13,12 @@
   <h3 align="center">
     <a href="https://github.com/kdhRick2222/Exposure-slot/" target='_blank'><img src="https://img.shields.io/badge/🐳-Project%20Page-blue"></a>
     <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Jung_Exposure-slot_Exposure-centric_Representations_Learning_with_Slot-in-Slot_Attention_for_Region-aware_Exposure_CVPR_2025_paper.pdf" target='_blank'><img src="https://img.shields.io/badge/🐳-Paper%20Page-blue"></a>
+    <!-- GitHub Project -->
+    <a href="https://github.com/kdhRick2222/Exposure-slot" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white"></a>
+    <!-- CVPR Paper -->
+    <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Jung_Exposure-slot_Exposure-centric_Representations_Learning_with_Slot-in-Slot_Attention_for_Region-aware_Exposure_CVPR_2025_paper.pdf" target="_blank"><img src="https://img.shields.io/badge/CVPR%20Paper-003B6F?logo=readthedocs&logoColor=white"></a>
+    <!-- Hugging Face Demo -->
+    <a href="https://huggingface.co/kdh2b/Exposure-slot/tree/main" target="_blank"><img src="https://img.shields.io/badge/🤗%20HuggingFace-FFAC45?logo=huggingface&logoColor=white"></a>
 <!--     <a href="https://paperswithcode.com/sota/image-enhancement-on-exposure-errors?p=exposure-slot-exposure-centric" target="_blank">
   <img src="https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/exposure-slot-exposure-centric/image-enhancement-on-exposure-errors"> -->
 </a>
